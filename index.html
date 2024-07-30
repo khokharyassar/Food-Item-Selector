@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Food Selector</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random Food Selector</h1>
+        <input type="text" id="foodInput" placeholder="Enter a Food Item">
+        <button onclick="addFood()">Add</button>
+        <ul id="foodList"></ul>
+        <button id="pickFoodBtn" onclick="pickRandomFood()">Pick Random Food</button>
+        <div id="foodScores" class="food-scores"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="foodModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="selectedFood"></h2>
+            </div>
+            <button class="ok-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
